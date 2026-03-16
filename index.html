@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavya Bhardwaj - Game Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Interactive Background with Mouse Following -->
+    <div class="animated-bg" id="animatedBg">
+        <div class="bg-blob blob-1"></div>
+        <div class="bg-blob blob-2"></div>
+        <div class="bg-blob blob-3"></div>
+        <div class="grid-background"></div>
+        <div class="mouse-follower" id="mouseFollower"></div>
+    </div>
+
+    <!-- Flying Spaceships -->
+    <div class="spaceships-container" id="spaceshipsContainer"></div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-container">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Initializing System...</p>
+            <div class="loading-bar"><div class="loading-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">KB</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#featured" class="nav-link">Orb Infinity</a></li>
+                <li><a href="#games" class="nav-link">Games</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles" id="particles"></div>
+        <div class="stars-background"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Kavya Bhardwaj</h1>
+            <p class="hero-subtitle">Unity Game Developer | Mobile Game Specialist</p>
+            <p class="hero-description">Creating futuristic, high-performance mobile games with stunning visuals</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">Explore My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-glow"></div>
+    </section>
+
+    <!-- About Me Section (First) -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-wrapper">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3 class="about-subtitle">Game Developer & Creative Technologist</h3>
+                        <p>Hey! I'm Kavya Bhardwaj, a passionate game developer with expertise in creating engaging and immersive gaming experiences. With a strong foundation in game development and a keen interest in emerging technologies like VR and XR, I love pushing the boundaries of what's possible in interactive entertainment.</p>
+                        <p>My development journey has led me to specialize in mobile game development, focusing on creating high-performance, visually stunning games that players love. Every game I create is built with passion, precision, and a commitment to excellence.</p>
+                        
+                        <div class="about-stats">
+                            <div class="stat">
+                                <div class="stat-number">5+</div>
+                                <div class="stat-label">Games Released</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">1M+</div>
+                                <div class="stat-label">Players</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">3+</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="about-card">
+                            <i class="fas fa-code"></i>
+                            <h4>Clean Architecture</h4>
+                            <p>OOP principles & modular design</p>
+                        </div>
+                        <div class="about-card">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Mobile First</h4>
+                            <p>Optimized for all devices</p>
+                        </div>
+                        <div class="about-card">
+                            <i class="fas fa-bolt"></i>
+                            <h4>High Performance</h4>
+                            <p>Fast loading & smooth gameplay</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-showcase">
+                    <h3 class="section-subtitle">Core Skills</h3>
+                    <div class="skills-grid-about">
+                        <div class="skill-item">
+                            <div class="skill-icon-small">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <span>Unity Engine</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-small">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span>C#</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 92%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-small">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <span>Game Design</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-small">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <span>Mobile Dev</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 88%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-small">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <span>UI/UX Design</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon-small">
+                                <i class="fas fa-vr-cardboard"></i>
+                            </div>
+                            <span>VR/XR Dev</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 82%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Game Section (Orb Infinity) -->
+    <section id="featured" class="featured-game">
+        <div class="container">
+            <h2 class="section-title">Featured Game</h2>
+            <p class="featured-subtitle">My Latest Masterpiece</p>
+            
+            <div class="featured-wrapper">
+                <div class="featured-image-section">
+                    <div class="game-image-showcase">
+                        <img src="https://images.unsplash.com/photo-1538481143235-b716b961d3f1?w=500&h=600&fit=crop" alt="Orb Infinity Game" class="showcase-img">
+                        <div class="image-glow"></div>
+                    </div>
+                    <button class="play-video-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                        <i class="fas fa-play"></i> Watch Gameplay
+                    </button>
+                </div>
+
+                <div class="featured-info-section">
+                    <h1 class="game-main-title">ORB INFINITY</h1>
+                    <p class="game-tagline">⚡ Endless Runner | Futuristic | High-Speed Action</p>
+                    
+                    <div class="game-description">
+                        <p><strong>Orb Infinity</strong> is a futuristic endless runner game where the player controls a glowing orb moving through a neon cyber-style environment. The goal is to survive as long as possible while collecting coins and increasing your score.</p>
+                    </div>
+
+                    <div class="features-box">
+                        <h3 class="box-title">🎮 Gameplay Features</h3>
+                        <div class="features-list">
+                            <span class="feature-badge">⚡ Endless Runner</span>
+                            <span class="feature-badge">🌆 Futuristic Neon</span>
+                            <span class="feature-badge">⚽ Smooth Physics</span>
+                            <span class="feature-badge">💰 Coin Collection</span>
+                            <span class="feature-badge">⭐ High Score</span>
+                            <span class="feature-badge">🏃 Speed System</span>
+                            <span class="feature-badge">🏪 Game Shop</span>
+                            <span class="feature-badge">🎨 Skins</span>
+                            <span class="feature-badge">📱 Mobile</span>
+                        </div>
+                    </div>
+
+                    <div class="mechanics-box">
+                        <h3 class="box-title">⚙️ Game Mechanics</h3>
+                        <div class="mechanics-grid">
+                            <div class="mechanic-item">
+                                <div class="mechanic-icon">💰</div>
+                                <h4>Coin System</h4>
+                                <p>Collect & use in shop</p>
+                            </div>
+                            <div class="mechanic-item">
+                                <div class="mechanic-icon">📊</div>
+                                <h4>Score System</h4>
+                                <p>Track your best run</p>
+                            </div>
+                            <div class="mechanic-item">
+                                <div class="mechanic-icon">🛒</div>
+                                <h4>Game Shop</h4>
+                                <p>Unlock new content</p>
+                            </div>
+                            <div class="mechanic-item">
+                                <div class="mechanic-icon">🎨</div>
+                                <h4>Skin System</h4>
+                                <p>Customize your orb</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="architecture-box">
+                        <h3 class="box-title">💻 Programming</h3>
+                        <p class="arch-intro">Built with <strong>OOP principles</strong></p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">OOP</span>
+                            <span class="tech-tag">Mobile</span>
+                            <span class="tech-tag">UI Design</span>
+                        </div>
+                    </div>
+
+                    <div class="featured-buttons">
+                        <a href="#" class="btn btn-primary btn-large">Play Game</a>
+                        <a href="#" class="btn btn-secondary btn-large">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <iframe id="videoFrame" width="100%" height="500" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Games Showcase Section -->
+    <section id="games" class="games">
+        <div class="container">
+            <h2 class="section-title">Other Games</h2>
+            <p class="section-subtitle">Explore my game collection</p>
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=500&h=300&fit=crop" alt="Mystic Quest">
+                        <div class="game-overlay">
+                            <button class="play-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">▶ Trailer</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Mystic Quest</h3>
+                        <p>An immersive RPG adventure with puzzle-solving and strategic combat.</p>
+                        <div class="game-tags">
+                            <span>2024</span>
+                            <span>PC/Mobile</span>
+                            <span>C#</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">View Project</a>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=500&h=300&fit=crop" alt="Gravity Shift">
+                        <div class="game-overlay">
+                            <button class="play-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">▶ Trailer</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Gravity Shift</h3>
+                        <p>A mind-bending physics puzzle game with innovative mechanics.</p>
+                        <div class="game-tags">
+                            <span>2023</span>
+                            <span>Web/Mobile</span>
+                            <span>C#</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">View Project</a>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://images.unsplash.com/photo-1571144611997-565a89f9d330?w=500&h=300&fit=crop" alt="VR Escape Room">
+                        <div class="game-overlay">
+                            <button class="play-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">▶ Trailer</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>VR Escape Room</h3>
+                        <p>An immersive VR experience with intricate puzzles.</p>
+                        <div class="game-tags">
+                            <span>2024</span>
+                            <span>VR/XR</span>
+                            <span>C#</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">View Project</a>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&h=300&fit=crop" alt="Stellar Conquest">
+                        <div class="game-overlay">
+                            <button class="play-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">▶ Trailer</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Stellar Conquest</h3>
+                        <p>A space strategy game with real-time combat.</p>
+                        <div class="game-tags">
+                            <span>2023</span>
+                            <span>PC</span>
+                            <span>C#</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">View Project</a>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://images.unsplash.com/photo-1538481143235-b716b961d3f1?w=500&h=300&fit=crop" alt="Cyber Runner">
+                        <div class="game-overlay">
+                            <button class="play-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">▶ Trailer</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Cyber Runner</h3>
+                        <p>An adrenaline-pumping endless runner in a cyberpunk city.</p>
+                        <div class="game-tags">
+                            <span>2024</span>
+                            <span>Mobile</span>
+                            <span>C#</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">View Project</a>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&h=300&fit=crop" alt="Nexus Force">
+                        <div class="game-overlay">
+                            <button class="play-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">▶ Trailer</button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Nexus Force</h3>
+                        <p>Futuristic action game with advanced AI systems.</p>
+                        <div class="game-tags">
+                            <span>2024</span>
+                            <span>PC</span>
+                            <span>C#</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <p class="section-subtitle">Technologies & Tools I Master</p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>Unity Engine</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%;"></div>
+                    </div>
+                    <span class="progress-text">95%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>C#</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 92%;"></div>
+                    </div>
+                    <span class="progress-text">92%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Game Mechanics</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <span class="progress-text">90%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 88%;"></div>
+                    </div>
+                    <span class="progress-text">88%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>OOP Architecture</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <span class="progress-text">90%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                    <span class="progress-text">85%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <h3>VR/XR Development</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 82%;"></div>
+                    </div>
+                    <span class="progress-text">82%</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>Git/GitHub</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <span class="progress-text">90%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Well Structured) -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's Create Something Amazing Together</p>
+            
+            <div class="contact-wrapper">
+                <!-- Contact Info Cards -->
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>kavya.bhardwaj@email.com</p>
+                        <a href="mailto:kavya.bhardwaj@email.com" class="card-link">Send Email</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>GitHub</h3>
+                        <p>Kavya-Bhardwaj</p>
+                        <a href="https://github.com/Kavya-Bhardwaj" target="_blank" class="card-link">View Repos</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>India</p>
+                        <a href="#" class="card-link">Available</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>+91 XXXXXXXXXX</p>
+                        <a href="tel:+919876543210" class="card-link">Call Now</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h3 class="form-title">Send Me a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                            <label for="name">Full Name</label>
+                            <div class="form-line"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                            <label for="email">Email Address</label>
+                            <div class="form-line"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                            <label for="subject">Subject</label>
+                            <div class="form-line"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="6" required></textarea>
+                            <label for="message">Message</label>
+                            <div class="form-line"></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kavya Bhardwaj</h3>
+                    <p>Game Developer & Creative Technologist</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#featured">Orb Infinity</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/Kavya-Bhardwaj" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kavya Bhardwaj. All rights reserved. | Game Developer Portfolio</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
