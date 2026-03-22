@@ -735,19 +735,26 @@ section {
     background: rgba(10, 20, 45, 0.7);
     border-top: 2px solid var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
+    padding: 6rem 0;
+}
+
+.featured-game .container {
+    max-width: 1400px;
 }
 
 .featured-subtitle {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: var(--primary-color);
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .featured-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 4rem;
     align-items: start;
 }
 
@@ -757,10 +764,10 @@ section {
 
 .game-image-showcase {
     position: relative;
-    border-radius: 15px;
+    border-radius: 20px;
     overflow: hidden;
     border: 3px solid var(--primary-color);
-    box-shadow: 0 0 40px rgba(0, 212, 255, 0.4);
+    box-shadow: 0 0 60px rgba(0, 212, 255, 0.5), 0 0 120px rgba(0, 212, 255, 0.2);
     margin-bottom: 2rem;
     aspect-ratio: 9/16;
 }
@@ -806,17 +813,17 @@ section {
 }
 
 .featured-info-section {
-    padding: 1rem;
+    padding: 1.5rem 1rem;
 }
 
 .game-main-title {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 900;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 0.5rem;
-    letter-spacing: 3px;
+    margin-bottom: 0.7rem;
+    letter-spacing: 4px;
 }
 
 .game-tagline {
@@ -1523,4 +1530,31 @@ section {
 @keyframes pulse {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.7; }
+}
+/* ===================================
+   MEDIUM SIZE PROJECT CARD
+   =================================== */
+
+/* Medium Size Project Card */
+.medium-size-project {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+}
+
+.medium-size-project .game-image,
+.medium-size-project .game-info {
+    width: 50%;
+}
+
+@media (max-width: 1024px) {
+    .medium-size-project {
+        grid-column: span 1;
+        flex-direction: column;
+    }
+
+    .medium-size-project .game-image,
+    .medium-size-project .game-info {
+        width: 100%;
+    }
 }
