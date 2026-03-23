@@ -1,6 +1,6 @@
 /* ===================================
    FUTURISTIC GAME DEV PORTFOLIO CSS
-   Complete with Spaceship Integration
+   Updated Portfolio without Live Game
    =================================== */
 
 :root {
@@ -136,7 +136,7 @@ body {
 }
 
 /* ===================================
-   SPACESHIPS ANIMATION (ENHANCED)
+   SPACESHIPS ANIMATION
    =================================== */
 .spaceships-container {
     position: fixed;
@@ -189,6 +189,15 @@ body {
     background: linear-gradient(to bottom, #00d4ff, transparent);
     filter: blur(3px);
     opacity: 0.8;
+}
+
+@keyframes floatSpaceship {
+    from {
+        transform: translateX(0) translateY(0) rotate(0deg);
+    }
+    to {
+        transform: translateX(200px) translateY(-200px) rotate(360deg);
+    }
 }
 
 /* ===================================
@@ -731,7 +740,7 @@ section {
 }
 
 /* ===================================
-   FEATURED GAME SECTION (OPTIMIZED)
+   FEATURED GAME SECTION
    =================================== */
 .featured-game {
     padding: 80px 0;
@@ -963,7 +972,7 @@ section {
 
 .games-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 2rem;
 }
 
@@ -1022,6 +1031,10 @@ section {
     cursor: pointer;
     font-weight: 600;
     transition: 0.3s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .play-btn:hover {
@@ -1062,7 +1075,6 @@ section {
 }
 
 .medium-size-project {
-    grid-column: span 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -1077,6 +1089,34 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/* ===================================
+   FLAPPY BIRD SPECIFIC STYLES
+   =================================== */
+.itchio-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #ff006e, #8338ec);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 15px rgba(255, 0, 110, 0.4);
+}
+
+.flappy-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.flappy-actions .btn {
+    flex: 1;
+    text-align: center;
 }
 
 /* ===================================
@@ -1332,7 +1372,7 @@ section {
 }
 
 /* ===================================
-   RESPONSIVE
+   RESPONSIVE DESIGN
    =================================== */
 @media (max-width: 1024px) {
     .skills-grid {
@@ -1340,11 +1380,12 @@ section {
     }
 
     .games-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 
     .medium-size-project {
-        grid-column: span 2;
+        grid-column: span 1;
+        grid-template-columns: 1fr;
     }
 
     .about-wrapper {
@@ -1389,11 +1430,6 @@ section {
         grid-template-columns: 1fr;
     }
 
-    .medium-size-project {
-        grid-column: span 1;
-        grid-template-columns: 1fr;
-    }
-
     .about-stats {
         grid-template-columns: 1fr;
     }
@@ -1402,19 +1438,12 @@ section {
         grid-template-columns: 1fr;
     }
 
-    .featured-buttons {
-        flex-direction: column;
-    }
-
-    .featured-buttons .btn {
-        width: 100%;
-    }
-
+    .featured-buttons,
     .hero-buttons {
         flex-direction: column;
-        width: 100%;
     }
 
+    .featured-buttons .btn,
     .hero-buttons .btn {
         width: 100%;
     }
@@ -1429,6 +1458,14 @@ section {
 
     .game-main-title {
         font-size: 2rem;
+    }
+
+    .flappy-actions {
+        flex-direction: column;
+    }
+
+    .flappy-actions .btn {
+        width: 100%;
     }
 }
 
@@ -1463,5 +1500,21 @@ section {
     .spaceship {
         width: 35px;
         height: 28px;
+    }
+
+    .game-info h3 {
+        font-size: 1.3rem;
+    }
+
+    .game-info p {
+        font-size: 0.85rem;
+    }
+
+    .flappy-actions {
+        flex-direction: column;
+    }
+
+    .flappy-actions .btn {
+        width: 100%;
     }
 }
